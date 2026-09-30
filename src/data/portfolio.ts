@@ -15,11 +15,17 @@
  *   public/resume.pdf                -> your CV
  */
 
-
 export type Social = {
   label: string;
   url: string; // leave "" to hide the icon
-  icon: "github" | "linkedin" | "instagram" | "youtube" | "facebook" | "twitter" | "mail";
+  icon:
+    | "github"
+    | "linkedin"
+    | "instagram"
+    | "youtube"
+    | "facebook"
+    | "twitter"
+    | "mail";
 };
 
 export type Skill = { name: string; note?: string };
@@ -76,7 +82,11 @@ export type Project = {
   highlights?: string[];
 };
 
-export type Service = { icon: string; title: string; description: string };
+export type Service = {
+  icon: string;
+  title: string;
+  description: string;
+};
 
 export type Achievement = {
   title: string;
@@ -94,11 +104,9 @@ export const personalInfo = {
   title: "Flutter Developer | Web Developer | AI Automation",
   greeting: "Hello, I'm",
 
-  roles: [
-    "Agentic AI Enthusiast",
-    "UI/UX Enthusiast",
-    "Problem Solver",
-  ],
+  roles: [ "Agentic AI Enthusiast",
+           "UI/UX Enthusiast", 
+           "Problem Solver", ],
 
   intro:
     "I build modern web and mobile applications, while exploring AI automation to create smarter and more efficient digital solutions.",
@@ -127,16 +135,18 @@ export const sections = [
   { id: "contact", label: "Contact" },
 ];
 
-/** Leave url "" to hide a social icon everywhere. */
+/** Leave url "" to hide a social icon. */
 export const socialLinks: Social[] = [
-  { label: "GitHub", url: "https://github.com/yourusername", icon: "github" },
-  { label: "LinkedIn", url: "www.linkedin.com/in/dawood-abbasi", icon: "linkedin" },
-  { label: "Instagram", url: "", icon: "instagram" },
-  { label: "YouTube", url: "", icon: "youtube" },
-  { label: "Facebook", url: "", icon: "facebook" },
-  { label: "Twitter / X", url: "", icon: "twitter" },
-  { label: "Email", url: "dawoodabbasiprivate2007@gmail.com", icon: "mail" },
-];
+   { label: "GitHub", url: "https://github.com/dawoodabbasi57", icon: "github" },
+   { label: "LinkedIn", url: "https://www.linkedin.com/in/dawood-abbasi", icon: "linkedin" },
+   { label: "Instagram", url: "https://www.instagram.com/dawood_abbasi57", icon: "instagram" },
+   { label: "YouTube", url: "https://www.youtube.com/@dawood_abbasi57", icon: "youtube" },
+   { label: "Facebook", url: "https://www.facebook.com/profile.php?id=61595114663640", icon: "facebook" },
+   { label: "Twitter / X", url: "https://x.com/dawood_abbasi57", icon: "twitter" },
+   { label: "Email", url: "mailto:dawoodabbasiprivate2007@gmail.com", icon: "mail" },
+   { label: "Fiverr", url: "https://www.fiverr.com/dawood_abbasi57", icon: "fiverr" },
+
+   ];
 
 /** Small numbers row shown under the hero portrait. */
 export const stats = [
@@ -329,6 +339,7 @@ export const education: Education[] = [
     image: "/images/education/paramount.png",
   },
 ];
+
 export const certifications: Certification[] = [
   {
     title: "Flutter Development Bootcamp",
@@ -386,7 +397,8 @@ export const certifications: Certification[] = [
     ],
     image: "/images/certificates/Education Embassador.png",
   },
-   {
+
+  {
     title: "Linux Kernel Development – Beginner's Guide",
     organization: "The Linux Foundation",
     issueDate: "2026",
@@ -413,8 +425,13 @@ export const projects: Project[] = [
     status: "In progress",
     date: "2025",
     featured: true,
-    highlights: ["Offline-first local storage", "Streak tracking & reminders", "Custom animated UI"],
+    highlights: [
+      "Offline-first local storage",
+      "Streak tracking & reminders",
+      "Custom animated UI",
+    ],
   },
+
   {
     title: "Portfolio Website",
     description:
@@ -425,6 +442,7 @@ export const projects: Project[] = [
     liveUrl: "",
     date: "2026",
   },
+
   {
     title: "Weather Now",
     description:
@@ -438,40 +456,46 @@ export const projects: Project[] = [
 
 export const services: Service[] = [
   {
-  icon: "smartphone",
-  title: "Mobile App Development",
-  description: "Cross-platform Flutter apps with clean architecture and polished UI.",
-},
+    icon: "smartphone",
+    title: "Mobile App Development",
+    description:
+      "Cross-platform Flutter apps with clean architecture and polished UI.",
+  },
 
-{
-  icon: "globe",
-  title: "Web Development",
-  description: "Responsive, fast websites and web apps built with modern tooling.",
-},
+  {
+    icon: "globe",
+    title: "Web Development",
+    description:
+      "Responsive, fast websites and web apps built with modern tooling.",
+  },
 
-{
-  icon: "palette",
-  title: "UI/UX Design",
-  description: "Wireframes and interfaces that are simple, consistent and user-friendly.",
-},
+  {
+    icon: "palette",
+    title: "UI/UX Design",
+    description:
+      "Wireframes and interfaces that are simple, consistent and user-friendly.",
+  },
 
-{
-  icon: "bot",
-  title: "AI Automation",
-  description: "AI-powered workflows and automations that streamline tasks and improve productivity.",
-},
+  {
+    icon: "bot",
+    title: "AI Automation",
+    description:
+      "AI-powered workflows and automations that streamline tasks and improve productivity.",
+  },
 
-{
-  icon: "brain",
-  title: "AI Solutions",
-  description: "Practical AI solutions using modern AI tools, APIs and intelligent workflows.",
-},
+  {
+    icon: "brain",
+    title: "AI Solutions",
+    description:
+      "Practical AI solutions using modern AI tools, APIs and intelligent workflows.",
+  },
 
-{
-  icon: "workflow",
-  title: "Agentic AI",
-  description: "AI agents and intelligent workflows designed to automate tasks and handle multi-step processes.",
-},
+  {
+    icon: "workflow",
+    title: "Agentic AI",
+    description:
+      "AI agents and intelligent workflows designed to automate tasks and handle multi-step processes.",
+  },
 ];
 
 export const achievements: Achievement[] = [

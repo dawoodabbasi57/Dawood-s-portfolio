@@ -143,9 +143,7 @@ export const socialLinks: Social[] = [
    { label: "YouTube", url: "https://www.youtube.com/@dawood_abbasi57", icon: "youtube" },
    { label: "Facebook", url: "https://www.facebook.com/profile.php?id=61595114663640", icon: "facebook" },
    { label: "Twitter / X", url: "https://x.com/dawood_abbasi57", icon: "twitter" },
-   { label: "Email", url: "mailto:dawoodabbasiprivate2007@gmail.com", icon: "mail" },
-   { label: "Fiverr", url: "https://www.fiverr.com/dawood_abbasi57", icon: "fiverr" },
-
+  
    ];
 
 /** Small numbers row shown under the hero portrait. */

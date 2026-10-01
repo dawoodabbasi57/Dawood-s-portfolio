@@ -49,9 +49,7 @@ export function About() {
 
                 <div className="flex justify-between gap-4 border-t border-border pt-3">
                   <dt className="text-muted-foreground">Status</dt>
-                  <dd className="text-right font-medium text-primary">
-                    {personalInfo.availability}
-                  </dd>
+                  <dd className="text-right font-medium text-primary">Available</dd>
                 </div>
               </dl>
             </div>

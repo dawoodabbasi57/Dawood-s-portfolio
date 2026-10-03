@@ -63,17 +63,17 @@ export function Navbar() {
           className="flex min-w-0 items-center gap-2.5 focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
         >
           <span className="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-lg border border-primary/30 bg-primary/10">
-            {personalInfo.logoImage ? (
-              <img
-  src={personalInfo.logoImage}
-  alt={`${personalInfo.name} logo`}
-  className="h-full w-full object-cover"
-/>
-            ) : (
-              <span className="font-display text-sm font-bold text-primary">
-                {personalInfo.initials}
-              </span>
-            )}
+           {personalInfo.profileImage ? (
+  <img
+    src={personalInfo.profileImage}
+    alt={personalInfo.name}
+    className="h-full w-full object-cover"
+  />
+) : (
+  <span className="font-display text-sm font-bold text-primary">
+    {personalInfo.initials}
+  </span>
+)}
           </span>
 
           <span className="hidden truncate font-display text-sm font-semibold sm:block">
